@@ -93,7 +93,7 @@ class App extends React.Component {
 
   onButtonSubmit = () => {
     this.setState({ imageURL: this.state.input });
-    fetch("https://whispering-plains-30293.herokuapp.com//imageurl", {
+    fetch("https://whispering-plains-30293.herokuapp.com/imageurl", {
       method: "post",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
